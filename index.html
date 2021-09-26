@@ -3,17 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap" rel="stylesheet"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@1&display=swap" rel="stylesheet">
+    
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,24 +19,24 @@
         <header id="header">
             <H1  id="title">NET<span>FLIX</span>  </H1>
             <h3 id=description>Thank you signing uo at Netflix. Tell us about yourself</h3>
-        </header>
+        </header><br>
 
         <section id="survey-form-container">
             <div id="survey-form">
                 <form action="result.html" method="GET" target="_blank">
-                <div></div>
+                <div>
                      <label for="name">Name</label><br>
                      <input type="text" name="entered_name" id="name" placeholder="Enter your name">
-                </div> <br>
-                <div>
+                    </div><br>
+                <div class="input-box">
                     <label for="age">Age</label><br>
                     <input type="number" name="entered_age" id="age" placeholder="Age">
                 </div><br>
-                <div>
+                <div class="input-box">
                     <label for="email">Email</label><br>
                     <input type="email" name="entered_email" id="email" placeholder="Enter your email">
                 </div><br>
-                <div>
+                <div class="input-box">
                     <label for="type">Content type</label><br>
                     <select name="types" id="type">
                      <option value="SEries"selected>Series</option>
@@ -50,7 +45,7 @@
                      <option value="Cartoon">Cartoon</option>
                  </select>            
                  </div> <br>
-                 <div>
+                 <div class="input-box">
                      <label for="type">Movie type</label> <br>
                      <input type="checkbox" id="c1" name="selected" value="Comedy">
                      <label for="c1"> Comedy</label><br>
@@ -59,8 +54,8 @@
                      <input type="checkbox" id="c3" name="selected" value="Romance" checked>
                      <label for="c3"> Romance</label>
                  </div><br>
-                 <div>
-                     <label >Gender</label><br>
+                 <div class="input-box">
+                     <label>Gender</label><br>
          
                      <input type="radio" name="selected_gen" id="gen">
                      <label for="gen">Male</label><br>
@@ -70,16 +65,19 @@
          
                      <input type="radio" name="selected_gen" id="gen3">
                      <label for="gen3">Other</label><br>
-                 </div>
+                 </div><br>
+                 
+
                  <div class="input-box">
-                     <label for="">Feedback</label><br>
-                     <input type="textarea" weight="30px" height="40px">
-                 </div>
-         
-                 <button type="submit" id="form-buttom" value="send">
-         
-         
-         
+                    <label for="feedback">Feedback</label><br>
+                    <textarea name="feedback" id="feedback" cols="30" rows="10"
+                    placeholder="any comment"></textarea>
+                </div>
+                 <br><br>
+                 <div id="form-submit">
+                 <button type="submit" id="form-buttom" >Send</button>
+                </div>
+                
          
          
              </form>
